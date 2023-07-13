@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="full-page">
+      <div class="navbar">
+        <div>
+          <a href="website.html">sheheryar</a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li class="#"><a href="#">Home</a></li>
+            <li class="#"><a href="#">About Us</a></li>
+            <li class="#"><a href="#">Services</a></li>
+            <li class="#"><a href="#">Contact</a></li>
+            <li>
+              <button
+                class="loginbtn"
+                onclick="document.getElementById('login-form').style.display='block'"
+                style="width: auto"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="button"></div>
+            <button
+              type="button"
+              onclick="login()"
+              class="toggle-btn"
+              style="color: white"
+            >
+              Log In
+            </button>
+            <button
+              type="button"
+              onclick="register()"
+              class="toggle-btn"
+              style="color: white"
+            >
+              Register
+            </button>
+          </div>
+          <form
+            action="connect.php"
+            method="post"
+            id="login"
+            class="input-group-login"
+          >
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Email Id"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >Remember Password</span
+            >
+            <button type="submit" class="submit-btn">Log in</button>
+          </form>
+          <form id="register" class="input-group-register">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="email id"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Confirm Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >I agree to the terms and conditions.</span
+            >
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
